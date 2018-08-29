@@ -19,7 +19,6 @@
         }
 
         /*********************/
-
     </style>
 
 </head>
@@ -29,14 +28,11 @@
 
     <script>
         const display = document.querySelector("#display");
-        let playliste = ["rock", "rap"
-            "rachmanioff"
-        ];
+        let playliste = ["Rock ", "Rap", "Rachmanioff"];
         playliste.forEach(track => {
             console.log(track);
-            display.innerHTML += track + ":-)" + "br />";
+            display.innerHTML += track + ":-)" + "<br/>";
         });
-
     </script>
 </body>
 
