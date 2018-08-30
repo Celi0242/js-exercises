@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse dyr</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="dyr">
+        <strong><span class="navn"></span></strong><span class="resten"></span>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dyr = {
+                "navn": "Isbjørn",
+                "type": "pattedyr",
+                "levested": "Grønland"
+            };
+
+
+            document.querySelector(".navn").textContent = dyr.navn;
+
+            document.querySelector(".resten").textContent = ": et " + dyr.type + " som lever på " + dyr.levested;
+
+
+            //Gammel opgave console.log("En " + dyr.navn + " er et " + dyr.type + " som lever på " + dyr.levested);
+        }
+    </script>
+</body>
+
+</html>
+
