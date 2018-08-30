@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse dyr e </title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="liste">
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        let dyr = [{
+                "navn": "Isbjørn",
+                "type": "pattedyr",
+                "levested": "Grønland",
+                "billede": "isbjørn.jpg"
+            },
+            {
+                "navn": "Sild",
+                "type": "fisk",
+                "levested": "Nordsøen",
+                "billede": "sild.jpg"
+            },
+            {
+                "navn": "Løve",
+                "type": "pattedyr",
+                "levested": "Sydafrika",
+                "billede": "løve.png"
+            },
+
+        ]
+
+
+        let dest = document.querySelector(".liste");
+
+
+        function start() {
+            dyr.forEach(dyr => {
+                dest.innerHTML += "<img src='" + dyr.billede + "' alt=''>" + dyr.navn + " " + dyr.type + " fra " + dyr.levested + "<br>";
+
+            });
+
+
+
+
+
+
+        }
+
+        //Gammel opgave console.log("En " + dyr.navn + " er et " + dyr.type + " som lever på " + dyr.levested);
+
+        // document.querySelector(".navn").textContent = dyr.navn;
+        // document.querySelector(".dyr img").src = dyr.billede;
+
+        //document.querySelector(".resten").textContent = " et " + dyr.type + " som lever på " + dyr.levested;
+    </script>
+</body>
+
+</html>

@@ -10,7 +10,8 @@
 
 <body>
     <div class="dyr">
-        <strong><span class="navn"></span></strong><span class="resten"></span>
+        <strong class="navn"></strong> <strong>:</strong><br> <img src="" alt="i"> <br> <span class="resten"></span>
+
 
     </div>
 
@@ -21,13 +22,18 @@
             let dyr = {
                 "navn": "Isbjørn",
                 "type": "pattedyr",
-                "levested": "Grønland"
+                "levested": "Grønland",
+                "billede": "isbjørn.jpg"
             };
 
 
             document.querySelector(".navn").textContent = dyr.navn;
 
-            document.querySelector(".resten").textContent = ": et " + dyr.type + " som lever på " + dyr.levested;
+            document.querySelector(".dyr img").src = dyr.billede;
+
+            document.querySelector(".resten").textContent = " et " + dyr.type + " som lever på " + dyr.levested;
+
+
 
 
             //Gammel opgave console.log("En " + dyr.navn + " er et " + dyr.type + " som lever på " + dyr.levested);
